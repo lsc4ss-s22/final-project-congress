@@ -46,3 +46,12 @@ I wish to utilize large scale computing methods to construct issue-oriented netw
 5. **Construct issue-based congressional networks (local)**: Code, output, and analysis can be found in [4_construct_network.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/4_construct_network.ipynb).
 
 6. **Regression analysis (local)**: Code, output, and analysis can be found in [5_analysis.pdf](https://github.com/lsc4ss-s22/final-project-congress/blob/master/5_analysis.pdf).
+
+
+## Analysis
+
+## Reference
+1. https://github.com/lsc4ss-s21/large-scale-personal-finance/blob/main/4_Pyspark_topic_modeling.ipynb
+2. https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Public/2.Text_Preprocessing_with_SparkNLP_Annotators_Transformers.ipynb#scrollTo=EgdWV7yFix8e
+3. https://medium.com/trustyou-engineering/topic-modelling-with-pyspark-and-spark-nlp-a99d063f1a6e
+4. https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.clustering.LDA.html
