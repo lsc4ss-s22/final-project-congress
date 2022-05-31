@@ -24,7 +24,7 @@ I wish to utilize large scale computing methods to construct issue-oriented netw
 [^3]: https://www.congress.gov/congressional-record/116th-congress/browse-by-date  note that the congressional record are daily-based
 
 ## Structure of the Project
-1. Scrape and clean congressional record: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py).
+1. **Scrape and clean congressional record (local)**: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py).
 
       Run: 
             
@@ -37,12 +37,12 @@ I wish to utilize large scale computing methods to construct issue-oriented netw
 
       All the json files map a speaker to his/her speeches in congressional record from 2019-2020 <br />
 
-2. Merge speech dataset and LES dataset: Code and output can be found in [1_merge_speech_and_LES.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/1_merge_speech_and_LES.ipynb).
+2. **Merge speech dataset and LES dataset**: Code and output can be found in [1_merge_speech_and_LES.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/1_merge_speech_and_LES.ipynb).
 
-3. Upload the merged dataset to s3: Code and output can be found in [2_upload_to_S3.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/2_upload_to_S3.ipynb).
+3. **Upload the merged dataset to s3**: Code and output can be found in [2_upload_to_S3.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/2_upload_to_S3.ipynb).
 
-4. Topic modelling using pyspark and spark nlp: Code and output can be found in [3_topic_model.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/3_topic_model.ipynb).
+4. **Topic modelling using pyspark machine learning and spark nlp**: Code and output can be found in [3_topic_model.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/3_topic_model.ipynb).
 
-5. Construct issue-based congressional networks: Code, output, and analysis can be found in [4_construct_network.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/4_construct_network.ipynb).
+5. **Construct issue-based congressional networks (local)**: Code, output, and analysis can be found in [4_construct_network.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/4_construct_network.ipynb).
 
-6. Regression analysis: Code, output, and analysis can be found in [5_analysis.pdf](https://github.com/lsc4ss-s22/final-project-congress/blob/master/5_analysis.pdf).
+6. **Regression analysis (local)**: Code, output, and analysis can be found in [5_analysis.pdf](https://github.com/lsc4ss-s22/final-project-congress/blob/master/5_analysis.pdf).
