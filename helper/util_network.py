@@ -137,3 +137,23 @@ def construct_ind_network(comm_network):
                 if l != mem and l not in network[mem]:
                     network[mem].append(l)
     return network
+
+
+def merge_party(df1, df2):
+    df1 = (
+        df1.merge(df2,
+                  left_on=['Legislator name'],
+                  right_on=['Legislator name'],
+                  how='left')
+    )
+    return df1
+
+
+def merge_centrality(df1, df2):
+    df1 = (
+        df1.merge(df2,
+                  left_on=['Legislator name'],
+                  right_on=['index'],
+                  how='left')
+    )
+    return df1
