@@ -1,12 +1,12 @@
 ## Workflow
 1. Scrape and clean congressional record: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py). My goal is to parallelize the scraping and cleaning process.
 
-Locally, run:
+Locally, run:  <br />
 
-  ```python3 scrape_cr.py```
+  ```python3 scrape_cr.py```  <br />
 
-  Senate record from 2019 will be stored in ```senate_speech (1).json``` \
-  Senate record from 2020 will be stored in ```senate_speech (2).json``` \
+  Senate record from 2019 will be stored in ```senate_speech (1).json```  <br />
+  Senate record from 2020 will be stored in ```senate_speech (2).json```  <br />
   House record from 2019-2020 will be stored in ```house_speech.json``` 
 
   All the json files map a speaker to his/her speeches in congressional record from 2019-2020
