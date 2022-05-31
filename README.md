@@ -7,7 +7,7 @@ Locally, run:
 
   Senate record from 2019 will be stored in ```senate_speech (1).json``` \
   Senate record from 2020 will be stored in ```senate_speech (2).json``` \
-  House record from 2019-2020 will be stored in ```house_speech.json``` \
+  House record from 2019-2020 will be stored in ```house_speech.json``` 
 
   All the json files map a speaker to his/her speeches in congressional record from 2019-2020
 
