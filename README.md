@@ -48,7 +48,13 @@ I wish to utilize large scale computing methods to select the issues for the iss
 6. **Regression analysis (local)**: Code, output, and analysis can be found in [5_analysis.pdf](https://github.com/lsc4ss-s22/final-project-congress/blob/master/5_analysis.pdf).
 
 
-## Analysis
+## Network Analysis
+![Issue-Based Network](https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png)
+We will first take a look at the network structure before regression analysis. The network consists of digraphs, and has 411 nodes as individual legislators (missing a few legislators during record linkage and due to the lack of issue-related speeches) and 20610 edges representing their committee- based connections, with density of 0.35, and average clustering coefficient of 0.43. There is no major clusters as observed 
+
+
+
+## Regression Analysis
 
 ## Reference
 1. https://github.com/lsc4ss-s21/large-scale-personal-finance/blob/main/4_Pyspark_topic_modeling.ipynb
