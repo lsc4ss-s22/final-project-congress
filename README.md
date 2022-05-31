@@ -24,9 +24,10 @@ I wish to utilize large scale computing methods to construct issue-oriented netw
 [^3]: https://www.congress.gov/congressional-record/116th-congress/browse-by-date  note that the congressional record are daily-based
 
 ## Structure of the Project
-1. Scrape and clean congressional record: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py). My goal is to parallelize the scraping and cleaning process.
+1. Scrape and clean congressional record: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py).
 
-      Locally, run: 
+      Run: 
+            pip install -r requirements.txt
 
             python3 scrape_cr.py
 
