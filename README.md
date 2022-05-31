@@ -27,8 +27,8 @@ I wish to utilize large scale computing methods to construct issue-oriented netw
 1. Scrape and clean congressional record: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py).
 
       Run: 
+            
             pip install -r requirements.txt
-
             python3 scrape_cr.py
 
       Senate record from 2019 will be stored in ```senate_speech (1).json```  <br />
