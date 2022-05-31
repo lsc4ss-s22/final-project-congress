@@ -11,7 +11,7 @@ Currently, I have completed constructing committee-oriented cross-partisan socia
 
 ## Large-Scale Computing Strategies
 
-I wish to utilize large scale computing methods to construct issue-oriented networks. 
+I wish to utilize large scale computing methods to select the issues for the issue-oriented congressional networks to ensure time efficiency, replicability and scalability. 
 
 * In order to extract issue-based networks and prepare them for social network and regression analysis, I need to scrape and clean the Congressional records for 116th Congress from Congress.gov[^3]. My intended large scale method is **a combination of AWS Lambda and Step functions, or AWS EMR, or Midway cluster**, but I have encountered some difficulties at the moment. Therefore, I am doing the scraping and cleaning on my local machine as if for now, and store the result, a dictionary that maps each legislator to all speeches made in the given congressional term(s) by the legislator, to ```AWS s3```. 
 
