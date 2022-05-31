@@ -52,6 +52,8 @@ I wish to utilize large scale computing methods to construct issue-oriented netw
 
 ## Reference
 1. https://github.com/lsc4ss-s21/large-scale-personal-finance/blob/main/4_Pyspark_topic_modeling.ipynb
-2. https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Public/2.Text_Preprocessing_with_SparkNLP_Annotators_Transformers.ipynb#scrollTo=EgdWV7yFix8e
-3. https://medium.com/trustyou-engineering/topic-modelling-with-pyspark-and-spark-nlp-a99d063f1a6e
-4. https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.clustering.LDA.html
+2. https://github.com/jchaskell/scraper-cr/blob/master/clean/filterCR_fix.py
+3. https://github.com/unitedstates/congressional-record/tree/master/congressionalrecord
+4. https://colab.research.google.com/github/JohnSnowLabs/spark-nlp-workshop/blob/master/tutorials/Certification_Trainings/Public/2.Text_Preprocessing_with_SparkNLP_Annotators_Transformers.ipynb#scrollTo=EgdWV7yFix8e
+5. https://medium.com/trustyou-engineering/topic-modelling-with-pyspark-and-spark-nlp-a99d063f1a6e
+6. https://spark.apache.org/docs/latest/api/python/reference/api/pyspark.ml.clustering.LDA.html
