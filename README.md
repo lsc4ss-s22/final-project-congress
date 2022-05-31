@@ -49,13 +49,26 @@ I wish to utilize large scale computing methods to select the issues for the iss
 
 
 ## Network Analysis
-<img src="https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png" data-canonical-src="https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png" width="200" height="200" />
+<p float="left">
+<p align="center"> Figure 1: Issue-Based Congressional Network </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png" data-canonical-src="https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png" width="500" height="500" />  </p>
 
-We will first take a look at the network structure before regression analysis. The network consists of digraphs, and has 411 nodes as individual legislators (missing a few legislators during record linkage and due to the lack of issue-related speeches) and 20610 edges representing their committee- based connections, with density of 0.35, and average clustering coefficient of 0.43. Each tie in the visualization represents a issue-based connection between legislators, meaning that the two legislators care about the same issue and have mentioned related keywords in their speeches as reflected by congressional records. To distinguish the party affiliation of each legislator, blue nodes refer to Democrat legislators, and red nodes refer to Republican legislators. The issue-based networks formed a moderately-connected and clustered network among all legislators. Legislators from the two parties are at a roughly equal level of connectedness. There is no major clusters as observed in the network, unlike committee-based network, where senators and house of representatives have formed two distinct clusters. 
+<p align="center"> Figure 2: Committee-Based Congressional Network </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/91070896/171291227-bbd58e04-561a-48c2-9f06-e0f3867a90d5.png" data-canonical-src="https://user-images.githubusercontent.com/91070896/171291227-bbd58e04-561a-48c2-9f06-e0f3867a90d5.png" width="500" height="500" />  </p>
+</p>
+
+We will first take a look at the network structure before regression analysis. The network consists of digraphs, and has 411 nodes as individual legislators (missing a few legislators during record linkage and due to the lack of issue-related speeches) and 20610 edges representing their committee-based connections, with density of 0.35, and average clustering coefficient of 0.43. The first graph is a visualizations of issue-based based congressional networks. Each tie in the visualization represents a issue-based connection between legislators, meaning that the two legislators care about the same issue and have mentioned related keywords in their speeches as reflected by congressional records. To distinguish the party affiliation of each legislator, blue nodes refer to Democrat legislators, and red nodes refer to Republican legislators. The issue-based networks formed a moderately-connected and clustered network among all legislators. Legislators from the two parties are at a roughly equal level of connectedness. There is no major clusters as observed in the network, unlike committee-based network, shwon in Figure 2, where senators and house of representatives have formed two distinct clusters. 
 
 
 
 ## Regression Analysis
+Does each of centrality measures, and/or race, and/or gender plays a role in determining whether a legislator is effective or not? In order to find out which independent variable or combination of independent variables will affect legislative effectiveness score, I decided to run a ridge regression and cross validate with a wide range of lambda values from 0.01 to 1000 on standardized features with first-order interaction terms in R. Ridge regression models use L2 regularization to weight and penalize residuals. They will likely shrink some coefficients to 0, or closer to 0, which helps me eliminate the unimportant features. It tends to generalize better because it is less sensitive to extreme variance in the data such as outliers. After training the models, the author compute the Bayesian information criterion (BIC) for model selection. BIC is derived from Bayesian probability and inference. It is appropriate for models fit under the maximum likelihood estimation framework. Typically, lower BIC value indicates lower penalty terms, hence a better model. The BIC values for all models ranges from 174 to 203, indicating the evidence for the best model and against the weaker model is strong. The most optimal lambda value turned out to be 0.01, with BIC = 173.8858. The results from the best performing model are shown in the table below.
+<p align="center"> Figure 3: Effect of Centrality (Issue-Based Network), Race and Ethnicity on Legislative Effectiveness </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/91070896/171294701-a6006847-ed1c-4f36-820a-970da791b32b.png" data-canonical-src="https://user-images.githubusercontent.com/91070896/171294701-a6006847-ed1c-4f36-820a-970da791b32b.png" width="600" height="800" />  </p>
+
+
+
+
 
 ## Reference
 1. https://github.com/lsc4ss-s21/large-scale-personal-finance/blob/main/4_Pyspark_topic_modeling.ipynb
