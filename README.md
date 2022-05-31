@@ -3,7 +3,7 @@
 
       Locally, run: 
 
-            ```python3 scrape_cr.py```
+            python3 scrape_cr.py
 
       Senate record from 2019 will be stored in ```senate_speech (1).json```  <br />
       Senate record from 2020 will be stored in ```senate_speech (2).json```  <br />
