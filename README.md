@@ -49,8 +49,9 @@ I wish to utilize large scale computing methods to select the issues for the iss
 
 
 ## Network Analysis
-![Issue-Based Network](https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png)
-We will first take a look at the network structure before regression analysis. The network consists of digraphs, and has 411 nodes as individual legislators (missing a few legislators during record linkage and due to the lack of issue-related speeches) and 20610 edges representing their committee- based connections, with density of 0.35, and average clustering coefficient of 0.43. There is no major clusters as observed 
+<img src="https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png" data-canonical-src="https://user-images.githubusercontent.com/91070896/171289064-7bef7d4c-5e3d-410a-a7c8-ac59732f030e.png" width="200" height="200" />
+
+We will first take a look at the network structure before regression analysis. The network consists of digraphs, and has 411 nodes as individual legislators (missing a few legislators during record linkage and due to the lack of issue-related speeches) and 20610 edges representing their committee- based connections, with density of 0.35, and average clustering coefficient of 0.43. Each tie in the visualization represents a issue-based connection between legislators, meaning that the two legislators care about the same issue and have mentioned related keywords in their speeches as reflected by congressional records. To distinguish the party affiliation of each legislator, blue nodes refer to Democrat legislators, and red nodes refer to Republican legislators. The issue-based networks formed a moderately-connected and clustered network among all legislators. Legislators from the two parties are at a roughly equal level of connectedness. There is no major clusters as observed in the network, unlike committee-based network, where senators and house of representatives have formed two distinct clusters. 
 
 
 
