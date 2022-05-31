@@ -1,7 +1,7 @@
 ## Workflow
 1. Scrape and clean congressional record: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py). My goal is to parallelize the scraping and cleaning process.
 
-      Locally, run:  <br />
+      Locally, run: 
 
               ```python3 scrape_cr.py```  
 
