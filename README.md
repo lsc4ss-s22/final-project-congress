@@ -3,13 +3,13 @@
 
 Locally, run:
 
-&nbsp; ```python3 scrape_cr.py```
+  ```python3 scrape_cr.py```
 
-&nbsp; Senate record from 2019 will be stored in ```senate_speech (1).json```
-&nbsp; Senate record from 2020 will be stored in ```senate_speech (2).json```
-&nbsp; House record from 2019-2020 will be stored in ```house_speech.json```
+  Senate record from 2019 will be stored in ```senate_speech (1).json```
+  Senate record from 2020 will be stored in ```senate_speech (2).json```
+  House record from 2019-2020 will be stored in ```house_speech.json```
 
-&nbsp; All the json files map a speaker to his/her speeches in congressional record from 2019-2020
+  All the json files map a speaker to his/her speeches in congressional record from 2019-2020
 
 2. Merge speech dataset and LES dataset: Code and output can be found in [1_merge_speech_and_LES.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/1_merge_speech_and_LES.ipynb).
 
