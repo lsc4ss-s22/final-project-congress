@@ -1,0 +1,46 @@
+---
+title: "Issue-based Congressional Network Regression Analysis"
+output: pdf_document
+date: '2022-06-01'
+author: Lynette Dang
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r cho = TRUE}
+library(readr)
+df <- read_csv("issue_analysis.csv")
+df[is.na(df)] = 0
+df$factor <- as.factor(sample(1:2, nrow(df), replace = TRUE))
+head(df)
+library(glmnet)
+library(xtable)
+
+# the original data frame and formula
+set.seed(23)
+f <- as.formula(df$`Legislative Effectiveness Score` ~ (df$bc+ df$ec+ df$cc+ df$dc + df$`Predicted Gender` + df$`Predicted Ethnicity`)^2)
+# transform dataframe to matrices as required by glmnet
+x <- model.matrix(f, df)
+y <- as.matrix(df$`Legislative Effectiveness Score`, ncol=1)
+
+# fit ridge regression model with a wide range of penalty parameter  
+lambdas <- 10^seq(3, -2, by = -.1)
+cv_fit <- cv.glmnet(x,y, lambda=lambdas, alpha = 0)
+fit <- cv_fit$glmnet.fit
+summary(fit)
+
+# get BIC value
+tLL <- fit$nulldev - deviance(fit)
+k <- fit$df
+n <- fit$nobs
+
+BIC<-log(n)*k - tLL
+BIC
+opt_lambda = lambdas[which(BIC == min(BIC))]
+# Choose best model
+best_model <- glmnet(x,y, lambda=opt_lambda, alpha = 0)
+df <- data.frame(coef.name = dimnames(coef(best_model))[[1]], coef.value = matrix(coef(best_model)))
+xtable(df)
+```
