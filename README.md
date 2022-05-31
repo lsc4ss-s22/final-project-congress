@@ -1,5 +1,5 @@
 # Large-Scale Computing Final Project: Issue-Based Congressional Network and Legislative Effectiveness
-This is the GitHub repository for the final project of MACS 30123 (Spring 2022) Large Scale Computing.
+This is the GitHub repository for the final project of MACS 30123 (Spring 2022) Large Scale Computing. \
 Author: Lynette Dang
 
 ## Social Science Questions
