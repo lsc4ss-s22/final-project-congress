@@ -11,7 +11,7 @@ Currently, I have completed constructing committee-oriented cross-partisan socia
 
 ## Large-Scale Computing Strategies
 
-I wish to utilize large scale computing methods to select the issues for the issue-oriented congressional networks to ensure time efficiency, replicability and scalability. 
+I wish to utilize large scale computing methods to scrape/clean congressional record and select the issues for the issue-oriented congressional networks to ensure time efficiency, replicability and scalability. 
 
 * In order to extract issue-based networks and prepare them for social network and regression analysis, I need to scrape and clean the Congressional records for 116th Congress from Congress.gov[^3]. My intended large scale method is **a combination of AWS Lambda and Step functions, or AWS EMR, or Midway cluster**, but I have encountered some difficulties at the moment. Therefore, I am doing the scraping and cleaning on my local machine as if for now, and store the result, a dictionary that maps each legislator to all speeches made in the given congressional term(s) by the legislator, to ```AWS s3```. 
 
@@ -22,6 +22,7 @@ I wish to utilize large scale computing methods to select the issues for the iss
 [^2]: Here, issue-oriented cross-partisan networks refer to social networks formed by legislators who bring up or discuss the same issues as reflected by Congressional record: the official daily record of the debates and proceedings of the U.S. Congress.
 
 [^3]: https://www.congress.gov/congressional-record/116th-congress/browse-by-date  note that the congressional record are daily-based
+
 
 ## Structure of the Project
 1. **Scrape and clean congressional record (local)**: Code can be found in [scrape_cr.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr.py).
@@ -47,6 +48,7 @@ I wish to utilize large scale computing methods to select the issues for the iss
 
 6. **Regression analysis (local)**: Code, output, and analysis can be found in [5_analysis.pdf](https://github.com/lsc4ss-s22/final-project-congress/blob/master/5_analysis.pdf).
 
+*On a side note, I could have directly wrote the scraped and cleaned speeches to s3 from my python script from step 1, upload the LES dataset, and do the merging through spark so that step 2 and 3 are no longer needed. But because the runtime for the scraping and cleaning program is very long on local machines, I separated the program into two parts: house and senate. My classmate Joe helped me to scrape house speeches and sent the file to me. Therefore, specifically for the workflow of this final project, I have decided to merge the datasets first, then upload to s3.
 
 ## Network Analysis
 <p float="left">
