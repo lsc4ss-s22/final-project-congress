@@ -48,7 +48,7 @@ I wish to utilize large scale computing methods to scrape/clean congressional re
 
 6. **Regression analysis (local)**: Code, output, and analysis can be found in [5_analysis.pdf](https://github.com/lsc4ss-s22/final-project-congress/blob/master/5_analysis.pdf).
 
-*On a side note, I could have directly wrote the scraped and cleaned speeches to s3 from my python script from step 1, upload the LES dataset, and do the merging through spark so that step 2 and 3 are no longer needed. But because the runtime for the scraping and cleaning program is very long on local machines, I separated the program into two parts: house and senate. My classmate Joe helped me to scrape house speeches and sent the file to me. Therefore, specifically for the workflow of this final project, I have decided to merge the datasets first, then upload to s3.
+On a side note, I could have directly wrote the scraped and cleaned speeches to s3 from my python script from step 1, upload the LES dataset, and do the merging through spark so that step 2 and 3 are no longer needed. But because the runtime for the scraping and cleaning program is very long on local machines, I separated the program into two parts: house and senate. My classmate Joe helped me to scrape house speeches and sent the file to me. Therefore, specifically for the workflow of this final project, I have decided to merge the datasets first, then upload to s3.
 
 ## Network Analysis
 <p float="left">
