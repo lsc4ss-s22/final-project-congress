@@ -42,7 +42,7 @@ I wish to utilize large scale computing methods to scrape/clean congressional re
 ### OR 
 
 
-1. **Scrape and clean congressional record (local, with pool threading)**: Code can be found in [scrape_cr_pt.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr_pt.py).
+1. **Scrape the congressional record (local, with pool threading)**: Code can be found in [scrape_cr_pt.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr_pt.py).
 
       Run: 
             
