@@ -49,7 +49,8 @@ I wish to utilize large scale computing methods to scrape/clean congressional re
             pip install -r requirements.txt
             python3 scrape_cr_pt.py
 
-      Note that: The pool threading implementation has been pilot tested. It can only parallelize the scraping part, not the cleaning part
+      Note that: The pool threading implementation has been pilot tested. It can only parallelize the scraping part, not the cleaning part.
+      
       Uncleaned Senate record from 2019-2020 will be stored in ```speech_senate_2019-01-01_2019_12_31.txt```  <br />
       Uncleaned House record from 2019-2020 will be stored in ```speech_house_2019-01-01_2019_12_31.txt```
 
