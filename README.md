@@ -42,7 +42,7 @@ I wish to utilize large scale computing methods to scrape/clean congressional re
 ### OR
 
 
-1. **Scrape the congressional record (local, with pool threading)**: Code can be found in [scrape_cr_pt.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr_pt.py).
+1. **Scrape and clean the congressional record (local, with pool threading)**: Code can be found in [scrape_cr_pt.py](https://github.com/lsc4ss-s22/final-project-congress/blob/master/scrape_cr_pt.py).
 
       Run: 
             
@@ -51,8 +51,8 @@ I wish to utilize large scale computing methods to scrape/clean congressional re
 
       Note that: The pool threading implementation has been pilot tested. It can only parallelize the scraping part, not the cleaning part.
       
-      Uncleaned Senate record from 2019-2020 will be stored in ```speech_senate_2019-01-01_2019_12_31.txt```  <br />
-      Uncleaned House record from 2019-2020 will be stored in ```speech_house_2019-01-01_2019_12_31.txt```
+      Senate record from 2019-2020 will be stored in ```speech_senate_2019-01-01_2019_12_31.json```  <br />
+      House record from 2019-2020 will be stored in ```speech_house_2019-01-01_2019_12_31.json```
 
 2. **Merge speech dataset and LES dataset**: Code and output can be found in [1_merge_speech_and_LES.ipynb](https://github.com/lsc4ss-s22/final-project-congress/blob/master/1_merge_speech_and_LES.ipynb).
 
